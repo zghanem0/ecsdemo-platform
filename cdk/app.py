@@ -137,7 +137,7 @@ class BaseVPCStack(Stack):
         #     }
         # )
         
-        # Tags.of(self.ecs_ec2_spot_mig_asg).add("Name", self.ecs_ec2_spot_mig_asg.node.path) 
+        # cdk.Tags.of(self.ecs_ec2_spot_mig_asg).add("Name", self.ecs_ec2_spot_mig_asg.node.path) 
         # CfnOutput(self, "EC2SpotAutoScalingGroupName", value=self.ecs_ec2_spot_mig_asg.ref, export_name="EC2SpotASGName")       
 
         # #### END EC2 SPOT CAPACITY PROVIDER SECTION #####
